@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.screen {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: #2d3748;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5a67d8;
+}
+
+.btn:disabled {
+    background-color: #cbd5e0;
+    cursor: not-allowed;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    color: #4a5568;
+}
+
+.quiz-content {
+    margin-bottom: 2rem;
+}
+
+.options {
+    display: grid;
+    gap: 1rem;
+}
+
+.option {
+    background-color: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    background-color: #edf2f7;
+    border-color: #667eea;
+}
+
+.option.selected {
+    background-color: #667eea;
+    border-color: #667eea;
+    color: white;
+}
+
+.option.correct {
+    background-color: #48bb78;
+    border-color: #48bb78;
+    color: white;
+}
+
+.option.incorrect {
+    background-color: #f56565;
+    border-color: #f56565;
+    color: white;
+}
+
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#score {
+    font-size: 2rem;
+    color: #2d3748;
+    margin: 1rem 0;
+}
+
+#summary {
+    margin: 1.5rem 0;
+    color: #4a5568;
+}
+
+#timer {
+    font-weight: 600;
+    color: #4a5568;
+}
