@@ -9,11 +9,11 @@
 <body>
     <div class="container">
         <div id="start-screen" class="screen">
-            <h1>Quiz App</h1>
-            <button id="start-button" class="btn">Start Quiz</button>
+            <h1>Soccer Quiz App</h1>
+            <button id="start-button" class="btn" onclick="startQuiz()">Start Quiz</button>
         </div>
 
-        <div id="quiz-screen" class="screen hidden">
+        <div id="quiz-screen" style="display: none;">
             <div class="quiz-header">
                 <div id="progress">Question <span id="current-question">1</span> of <span id="total-questions">5</span></div>
                 <div id="timer">Time: <span id="time">00:00</span></div>
@@ -37,5 +37,7 @@
             <button id="restart-button" class="btn">Restart Quiz</button>
         </div>
     </div>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
